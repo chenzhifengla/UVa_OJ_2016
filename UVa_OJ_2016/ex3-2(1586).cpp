@@ -11,9 +11,11 @@ int main(){
     while(t--){
         char s[100];
         scanf("%s", s);
-        double sum = 0, price = 0;
+        double sum = 0, price = 0, num = 0;
         for (int i = 0; s[i]; i++){
             if (isalpha(s[i])) {
+                sum += price * (num == 0 ? 1 : num);
+                num = 0;
                 if (s[i] == 'C') {
                     price = 12.01;
                 }
@@ -26,20 +28,13 @@ int main(){
                 else if (s[i] == 'N') {
                     price = 14.01;
                 }
-                if (!isdigit(s[i + 1])) {
-                    sum += price;
-                }
             }
             else {
-                int num = s[i] - '0';
-                if (isdigit(s[i+1])) {
-                    num = num * 10 + s[i + 1] - '0';
-                    i++;
-                }
-                sum += price * num;
+                num = num * 10 + s[i] - '0';
             }
         }
-        printf("%g\n", sum);
+        sum += price * (num == 0 ? 1 : num);
+        printf("%.3f\n", sum);
     }
     return 0;
 }
