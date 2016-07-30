@@ -146,6 +146,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="eg3-1(272).cpp" />
+    <ClCompile Include="eg3-2(10082).cpp" />
+    <ClCompile Include="eg3-3(401).cpp" />
+    <ClCompile Include="eg3-4(340).cpp" />
+    <ClCompile Include="eg3-5(1583).cpp" />
+    <ClCompile Include="eg3-6(1584).cpp" />
+    <ClCompile Include="ex3-1(1585).cpp" />
+    <ClCompile Include="ex3-2(1586).cpp" />
+    <ClCompile Include="ex3-3(1225).cpp" />
+    <ClCompile Include="ex3-4(455).cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
