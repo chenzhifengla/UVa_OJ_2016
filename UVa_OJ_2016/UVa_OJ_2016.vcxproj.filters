@@ -54,7 +54,16 @@
     <ClCompile Include="ex3-7(1368).cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="3-8(202).cpp">
+    <ClCompile Include="ex3-8%28202%29%28RE%29.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ex3-9%2810340%29%28RE%29.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ex3-10%281587%29%28UR%29.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ex3-11%281588%29%28WA%29.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

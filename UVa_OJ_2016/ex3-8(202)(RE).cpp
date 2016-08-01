@@ -2,17 +2,17 @@
 
 int main() {
 	int fz, fm;
-	while (scanf("%d%d", &fz, &fm) != EOF) {
-		printf("%d/%d = ");
+	while (scanf("%d%d", &fz, &fm) != EOF && fm) {
+		printf("%d/%d = ", fz, fm);
 		int zs = fz / fm;
 		printf("%d.", zs);
 		fz %= fm;
 		//digit array
 		int reminder[1001];
 		int quotient[1001];
-		int len_rem = 0;
-		int len_quo = 0;
-		int len_rec = 0;
+		int len_rem = 0;	
+		int len_quo = 0;	
+		int len_rec = 1;	
 		reminder[len_rem++] = fz;
 		while (1) {
 			fz *= 10;
@@ -22,11 +22,11 @@ int main() {
 				break;
 			}
 			else {
-				bool flag = false;
+				int flag = 0;
 				for (int i = 0; i < len_rem; i++) {
 					if (reminder[i] == fz) {
-						len_rec = len_quo;
-						flag = true;
+						len_rec = len_quo - i;
+						flag = 1;
 						break;
 					}
 				}
@@ -46,8 +46,11 @@ int main() {
 			//%d = number of digits in repeating cycle", 
 		}
 		else {
+			for (int i = 0; i < len_quo - len_rec; i++) {
+				printf("%d", quotient[i]);
+			}
 			printf("(");
-			for (int i = 0; i < len_quo && i < 50; i++) {
+			for (int i = len_quo - len_rec; i < len_quo && i < 50; i++) {
 				printf("%d", quotient[i]);
 			}
 			if (len_quo > 50) {
@@ -55,7 +58,7 @@ int main() {
 			}
 			printf(")\n");
 		}
-		printf("   %d = number of digits in repeating cycle", len_rec);
+		printf("   %d = number of digits in repeating cycle\n", len_rec);
 	}
 	return 0;
 }
