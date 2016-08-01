@@ -45,5 +45,17 @@
     <ClCompile Include="ex3-4(455).cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="ex3-6(232).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ex3-5%28227%29%28WA%29.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ex3-7(1368).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="3-8(202).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
