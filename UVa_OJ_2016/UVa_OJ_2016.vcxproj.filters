@@ -87,5 +87,14 @@
     <ClCompile Include="eg4-6%2812412%29%28UR%29.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="ex4-1%281589%29%28WA%29.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ex4-2(201).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ex4-3(220).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
