@@ -165,5 +165,17 @@
     <ClCompile Include="ex5-4%2810763%29%28WA%29.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="ex5-5(10391).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="test.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ex5-7(12100).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ex5-6%281595%29%28WA%29.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
