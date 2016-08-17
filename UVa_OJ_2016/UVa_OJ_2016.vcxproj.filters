@@ -177,5 +177,20 @@
     <ClCompile Include="ex5-6%281595%29%28WA%29.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="ex5-8%28230%29%28UR%29.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ex5-9(1596).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ex5-10%281597%29%28TLE%29.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ex5-11(12504).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ex5-12(511).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

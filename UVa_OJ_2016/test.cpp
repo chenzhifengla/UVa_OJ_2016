@@ -1,5 +1,6 @@
 #include <cstdio>
 #include <algorithm>
+#include <string>
 using namespace std;
 
 bool cmp1(const int& a, const int& b) {
@@ -11,8 +12,7 @@ bool cmp2(const int& a, const int& b) {
 }
 
 int main() {
-	int buf[] = { 4, 6, 2, 8, 5 };
-	sort(buf, buf + 5, cmp1);
-	sort(buf, buf + 5, cmp2);
+	string a = "abc";
+	if (a == "abc")printf("equal\n");
 	return 0;
 }
