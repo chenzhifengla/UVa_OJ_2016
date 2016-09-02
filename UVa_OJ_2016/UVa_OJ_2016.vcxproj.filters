@@ -234,5 +234,8 @@
     <ClCompile Include="eg6-10(699).cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="eg6-11(297).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

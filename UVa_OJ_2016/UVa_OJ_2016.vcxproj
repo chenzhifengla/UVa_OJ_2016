@@ -202,6 +202,7 @@
     </ClCompile>
     <ClCompile Include="eg6-1(210)(UR).cpp" />
     <ClCompile Include="eg6-10(699).cpp" />
+    <ClCompile Include="eg6-11(297).cpp" />
     <ClCompile Include="eg6-2(514).cpp" />
     <ClCompile Include="eg6-3(442).cpp" />
     <ClCompile Include="eg6-4(11988).cpp" />
