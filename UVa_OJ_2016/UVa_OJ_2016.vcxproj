@@ -201,10 +201,15 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="eg6-1(210)(UR).cpp" />
+    <ClCompile Include="eg6-10(699).cpp" />
     <ClCompile Include="eg6-2(514).cpp" />
     <ClCompile Include="eg6-3(442).cpp" />
     <ClCompile Include="eg6-4(11988).cpp" />
     <ClCompile Include="eg6-5(12657).cpp" />
+    <ClCompile Include="eg6-6(679).cpp" />
+    <ClCompile Include="eg6-7(122).cpp" />
+    <ClCompile Include="eg6-8(548).cpp" />
+    <ClCompile Include="eg6-9(839).cpp" />
     <ClCompile Include="ex3-10%281587%29%28UR%29.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>

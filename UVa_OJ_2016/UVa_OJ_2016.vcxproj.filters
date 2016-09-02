@@ -219,5 +219,20 @@
     <ClCompile Include="eg6-5(12657).cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="eg6-6(679).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="eg6-7(122).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="eg6-8(548).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="eg6-9(839).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="eg6-10(699).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
