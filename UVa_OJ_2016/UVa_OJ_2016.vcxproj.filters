@@ -306,5 +306,14 @@
     <ClCompile Include="ex6-11%2810410%29%28WA%29.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="ex6-12%28810%29%28WA%29.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ex6-13%28215%29%28RE%29.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ex6-14(12118)(UR).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
