@@ -315,5 +315,14 @@
     <ClCompile Include="ex6-14(12118)(UR).cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="eg7-1(725).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="eg7-2%2811059%29%28WA%29.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="eg7-3%2810976%29%28WA%29.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
