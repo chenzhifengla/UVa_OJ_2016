@@ -300,5 +300,11 @@
     <ClCompile Include="ex6-9%28127%29%28WA%29.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="ex6-10%28246%29%28WA%29.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ex6-11%2810410%29%28WA%29.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
