@@ -330,5 +330,19 @@
     <ClCompile Include="eg7-5%28129%29%28PE%29.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="eg7-6%28140%29%28UR%29.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="eg7-7(1354)(UR).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="eg7-8(10603).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="eg7-7.5.cpp">
+      <Filter>源文件</Filter>
+    </None>
   </ItemGroup>
 </Project>

@@ -261,6 +261,9 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="eg7-5%28129%29%28PE%29.cpp" />
+    <ClCompile Include="eg7-6%28140%29%28UR%29.cpp" />
+    <ClCompile Include="eg7-7(1354)(UR).cpp" />
+    <ClCompile Include="eg7-8(10603).cpp" />
     <ClCompile Include="ex6-10%28246%29%28WA%29.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
@@ -459,6 +462,9 @@
     <ClCompile Include="test.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="eg7-7.5.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
