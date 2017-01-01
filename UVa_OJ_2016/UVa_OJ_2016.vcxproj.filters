@@ -339,9 +339,36 @@
     <ClCompile Include="eg7-8(10603).cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="eg7-9%281601%29%28UR%29.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="eg7-10%2811212%29%28UR%29.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="eg7-11(12325)(UR).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="eg7-12(1343)(UR).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="eg7-13(1374)(UR).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="eg7-14%281602%29%28UR%29.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="eg7-15(1603)(UR).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="eg8-7(11572).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="eg7-7.5.cpp">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="eg7-9.5.cpp">
       <Filter>源文件</Filter>
     </None>
   </ItemGroup>

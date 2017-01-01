@@ -251,6 +251,12 @@
     <ClCompile Include="eg7-1(725).cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="eg7-10%2811212%29%28UR%29.cpp" />
+    <ClCompile Include="eg7-11(12325)(UR).cpp" />
+    <ClCompile Include="eg7-12(1343)(UR).cpp" />
+    <ClCompile Include="eg7-13(1374)(UR).cpp" />
+    <ClCompile Include="eg7-14%281602%29%28UR%29.cpp" />
+    <ClCompile Include="eg7-15(1603)(UR).cpp" />
     <ClCompile Include="eg7-2%2811059%29%28WA%29.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
@@ -264,6 +270,8 @@
     <ClCompile Include="eg7-6%28140%29%28UR%29.cpp" />
     <ClCompile Include="eg7-7(1354)(UR).cpp" />
     <ClCompile Include="eg7-8(10603).cpp" />
+    <ClCompile Include="eg7-9%281601%29%28UR%29.cpp" />
+    <ClCompile Include="eg8-7(11572).cpp" />
     <ClCompile Include="ex6-10%28246%29%28WA%29.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
@@ -465,6 +473,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="eg7-7.5.cpp" />
+    <None Include="eg7-9.5.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
