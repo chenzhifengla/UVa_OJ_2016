@@ -15,18 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="eg3-1(272).cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="eg3-2(10082).cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="eg3-3(401).cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="eg3-4(340).cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="eg3-5(1583).cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -370,6 +358,18 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="eg3-0-3(竖式问题).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="eg3-1%28272%29%28accept%29.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="eg3-2%2810082%29%28accept%29.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="eg3-3%28401%29%28accept%29.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="eg3-4%28340%29%28WA%29.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
