@@ -363,12 +363,24 @@
     <ClCompile Include="eg8-7(11572).cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="eg3-0-1(开灯问题).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="eg3-0-2(蛇形填数).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="eg3-0-3(竖式问题).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="eg7-7.5.cpp">
       <Filter>源文件</Filter>
     </None>
     <None Include="eg7-9.5.cpp">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="README.md">
       <Filter>源文件</Filter>
     </None>
   </ItemGroup>
