@@ -156,9 +156,6 @@
     <ClCompile Include="ex5-5(10391).cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="test.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="ex5-7(12100).cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -369,7 +366,7 @@
     <ClCompile Include="eg3-3%28401%29%28accept%29.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="eg3-4%28340%29%28WA%29.cpp">
+    <ClCompile Include="eg3-4%28340%29.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
