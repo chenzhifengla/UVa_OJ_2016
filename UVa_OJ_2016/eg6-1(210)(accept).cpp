@@ -8,6 +8,11 @@
 #include <string>
 #include <sstream>
 using namespace std;
+struct Cmd {
+    int kind;
+    char var;
+    int value;
+};
 
 int main() {
     //freopen("eg6-1(210).in", "r", stdin);
@@ -21,15 +26,35 @@ int main() {
         }
         cin >> Q;
         deque<int> ready_q;
-        vector<queue<string>> processes;
+        vector<queue<Cmd>> processes;
         int pro_num = 0;
-        string cmd;
-        getline(cin, cmd);
+        string cmd_s;
+        Cmd cmd;
         while (pro_num < n) {
-            processes.push_back(queue<string>());
-            while (getline(cin, cmd)) {
+            processes.push_back(queue<Cmd>());
+            while (cin >> cmd_s) {
+                if (cmd_s.length() == 1) {
+                    cmd.kind = 0;
+                    cmd.var = cmd_s[0];
+                    cin >> cmd_s; cin >> cmd_s;
+                    cmd.value = stoi(cmd_s);
+                }
+                else if (cmd_s == "print") {
+                    cmd.kind = 1;
+                    cin >> cmd_s;
+                    cmd.var = cmd_s[0];
+                }
+                else if (cmd_s == "lock") {
+                    cmd.kind = 2;
+                }
+                else if (cmd_s == "unlock") {
+                    cmd.kind = 3;
+                }
+                else {
+                    cmd.kind = 4;
+                }
                 processes[pro_num].push(cmd);
-                if (cmd.substr(0, 3) == "end") break;
+                if (cmd_s == "end") break;
             }
             ready_q.push_back(pro_num);
             pro_num++;
@@ -46,7 +71,7 @@ int main() {
             while (used_time < Q && !processes[pro_num].empty()) {
                 cmd = processes[pro_num].front();
                 //cout << "  弹出程序" << pro_num + 1 << "的指令" << cmd << endl;
-                if (cmd.substr(0, 4) == "lock") {
+                if (cmd.kind == 2) {
                     if (lock < 0) {
                         lock = pro_num;
                         used_time += t[2];
@@ -58,7 +83,7 @@ int main() {
                         break;
                     }
                 }
-                else if (cmd.substr(0, 6) == "unlock") {
+                else if (cmd.kind == 3) {
                     lock = -1;
                     used_time += t[3];
                     //cout << "    程序" << pro_num + 1 << "unlock了所有变量" << endl;
@@ -69,34 +94,21 @@ int main() {
                         //cout << "      程序" << pro_num_block + 1 << "从阻止队列取出，加到等待队列首部" << endl;
                     }
                 }
-                else if (cmd.substr(0, 3) == "end") {
+                else if (cmd.kind == 4) {
                     isend = true;
                     used_time += t[4];
                     //cout << "    程序" << pro_num + 1 << "运行结束" << endl;
                     break;
                 }
-                else if (cmd.substr(0, 5) == "print") {
-                    stringstream ss(cmd);
-                    string var;
-                    ss >> var; ss >> var;
-                    //string var = cmd.substr(6);
+                else if (cmd.kind == 1) {
                     //cout << "    程序" << pro_num + 1 << "即将打印变量" << var << "的值" << endl;
-                    cout << pro_num + 1 << ": " << vars[var[0]] << endl;
+                    cout << pro_num + 1 << ": " << vars[cmd.var] << endl;
                     used_time += t[1];
                 }
                 else {
-                    stringstream ss(cmd);
-                    string var, value_s;
-                    ss >> var;
-                    ss >> value_s; ss >> value_s;
-                    //string var = cmd.substr(0, 1);
-                    //int value = stoi(cmd.substr(4));
-                    int value = stoi(value_s);
-                    if (lock < 0 || lock == pro_num) {
-                        vars[var[0]] = value;
-                        used_time += t[0];
-                        //cout << "    程序" << pro_num + 1 << "将变量" << var << "的值变为" << value << endl;
-                    }
+                    vars[cmd.var] = cmd.value;
+                    used_time += t[0];
+                    //cout << "    程序" << pro_num + 1 << "将变量" << var << "的值变为" << value << endl;
                 }
                 processes[pro_num].pop();   // 弹出一个指令
             }
