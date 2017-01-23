@@ -132,12 +132,6 @@
     <ClCompile Include="ex5-16%28212%29%28WA%29.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="eg6-9(839).cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="eg6-10(699).cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="eg6-11(297).cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -366,6 +360,12 @@
     <ClCompile Include="eg6-8%28548%29%28accept%29.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="eg6-9%28839%29%28accept%29.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="eg6-10%28699%29%28accept%29.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="eg7-7.5.cpp">
@@ -415,6 +415,9 @@
       <Filter>源文件</Filter>
     </None>
     <None Include="eg6-8(548).in">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="eg6-10(699).in">
       <Filter>源文件</Filter>
     </None>
   </ItemGroup>
