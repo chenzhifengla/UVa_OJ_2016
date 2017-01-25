@@ -132,21 +132,6 @@
     <ClCompile Include="ex5-16%28212%29%28WA%29.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="eg6-11(297).cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="eg6-12(572).cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="eg6-13%281103%29%28RE%29.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="eg6-15%2810305%29%28WA%29.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="eg6-16%2810129%29%28WA%29.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="eg6-17(10562).cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -342,9 +327,6 @@
     <ClCompile Include="eg6-3%28442%29%28accept%29.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="eg6-14%28816%29.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="eg6-4%2811988%29%28accept%29.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -366,6 +348,27 @@
     <ClCompile Include="eg6-10%28699%29%28accept%29.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="eg6-11%28297%29%28accept%29.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="eg6-12%28572%29%28accept%29.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="eg6-13%281103%29%28accept%29.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="eg6-14%28816%29%28accept%29.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="eg6-15%2810305%29%28accept%29.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="eg6-16%2810129%29.in">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="eg6-16%2810129%29%28accept%29.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="eg7-7.5.cpp">
@@ -377,48 +380,74 @@
     <None Include="README.md">
       <Filter>源文件</Filter>
     </None>
-    <None Include="eg4-4(213).in" />
-    <None Include="eg4-5(512).in" />
-    <None Include="eg4-6(12412).in" />
-    <None Include="eg5-1(10474).in" />
-    <None Include="eg5-2(101).in" />
-    <None Include="eg5-4(156).in" />
-    <None Include="eg5-5(12096).in" />
+    <None Include="eg6-11(297).in">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="eg5-5(12096).in">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="eg4-4(213).in">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="eg4-5(512).in">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="eg4-6(12412).in">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="eg5-1(10474).in">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="eg5-2(101).in">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="eg5-4(156).in">
+      <Filter>资源文件</Filter>
+    </None>
     <None Include="eg5-6(540).in">
-      <Filter>源文件</Filter>
+      <Filter>资源文件</Filter>
     </None>
     <None Include="eg5-8(400).in">
-      <Filter>源文件</Filter>
+      <Filter>资源文件</Filter>
     </None>
     <None Include="eg5-9(1592).in">
-      <Filter>源文件</Filter>
+      <Filter>资源文件</Filter>
     </None>
     <None Include="eg5-11(814).in">
-      <Filter>源文件</Filter>
+      <Filter>资源文件</Filter>
     </None>
     <None Include="eg6-1(210).in">
-      <Filter>源文件</Filter>
+      <Filter>资源文件</Filter>
     </None>
     <None Include="eg6-3(442).in">
-      <Filter>源文件</Filter>
+      <Filter>资源文件</Filter>
     </None>
     <None Include="eg6-4(11988).in">
-      <Filter>源文件</Filter>
+      <Filter>资源文件</Filter>
     </None>
     <None Include="eg6-5(12657).in">
-      <Filter>源文件</Filter>
+      <Filter>资源文件</Filter>
     </None>
     <None Include="eg6-6(679).in">
-      <Filter>源文件</Filter>
+      <Filter>资源文件</Filter>
     </None>
     <None Include="eg6-7(122).in">
-      <Filter>源文件</Filter>
+      <Filter>资源文件</Filter>
     </None>
     <None Include="eg6-8(548).in">
-      <Filter>源文件</Filter>
+      <Filter>资源文件</Filter>
     </None>
     <None Include="eg6-10(699).in">
-      <Filter>源文件</Filter>
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="eg6-12(572).in">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="eg6-13(1103).in">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="eg6-14(816).in">
+      <Filter>资源文件</Filter>
     </None>
   </ItemGroup>
 </Project>
