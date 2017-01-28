@@ -207,7 +207,7 @@
 //            }
 //        }
 //        v_air = 0;
-//        //dfs(0, 0, 0);
+//        dfs(0, 0, 0);
 //        //cout << "502 * 502 * 502=" << 502 * 502 * 502 << endl;
 //        //cout << v_air << endl;
 //        cout << 501 * 501 * 501 - v_air << endl;
@@ -218,6 +218,7 @@
 
 
 // 2017-01-27-chenkuan
+
 #include <iostream>
 #include <vector>
 #include <stack>
@@ -290,53 +291,44 @@ int main() {
                 }
             }
         }
-        int v_air = 0;
+        int v_air = 0, s_air = 0;
         stack<Point> S;
-        v_air += (croods[0][1] - croods[0][0]) *
-            (croods[1][1] - croods[1][0]) *
-            (croods[2][1] - croods[2][0]);
         S.emplace(0, 0, 0);
         int x, y, z, x1, y1, z1;
         while (!S.empty()) {
             Point point = S.top();
+            S.pop();
             x = point.x; y = point.y; z = point.z;
-            //vis[x][y][z] = true;
-            //v_air += (croods[0][x + 1] - croods[0][x]) * 
-            //    (croods[1][y + 1] - croods[1][y]) * 
-            //    (croods[2][z + 1] - croods[2][z]);
-            //cout << "(" << croods[0][x] << "," << croods[1][y] << "," << croods[2][z] << ") -- ("
-            //        << croods[0][x + 1] << "," << croods[1][y + 1] << "," << croods[2][z + 1] << "), v=" << (croods[0][x + 1] - croods[0][x]) *
-            //        (croods[1][y + 1] - croods[1][y]) *
-            //        (croods[2][z + 1] - croods[2][z]) << endl;
-            bool has_neibor = false;
-            for (int i = 0; i < 6; i++) {
-                x1 = x + step[i][0];
-                y1 = y + step[i][1];
-                z1 = z + step[i][2];
-                if (x1 < 0 || x1 >= croods[0].size() - 1) continue;
-                if (y1 < 0 || y1 >= croods[1].size() - 1) continue;
-                if (z1 < 0 || z1 >= croods[2].size() - 1) continue;
-                if (vis[x1][y1][z1] || G[x1][y1][z1]) continue;
-                //if (x1 == 4 && y1 == 2 && z1 == 2) {
-                //    cout << "422" << endl;
-                //}
-                vis[x1][y1][z1] = true;
-                v_air += (croods[0][x1 + 1] - croods[0][x1]) * 
-                    (croods[1][y1 + 1] - croods[1][y1]) * 
-                    (croods[2][z1 + 1] - croods[2][z1]);
-                //cout << "(" << croods[0][x1] << "," << croods[1][y1] << "," << croods[2][z1] << ") -- ("
-                //        << croods[0][x1 + 1] << "," << croods[1][y1 + 1] << "," << croods[2][z1 + 1] << "), v=" << (croods[0][x1 + 1] - croods[0][x1]) *
-                //        (croods[1][y1 + 1] - croods[1][y1]) *
-                //        (croods[2][z1 + 1] - croods[2][z1]) << endl;
-                S.emplace(x1, y1, z1);
-                has_neibor = true;
+            if (!vis[x][y][z]) {
+                vis[x][y][z] = true;
+                v_air += (croods[0][x + 1] - croods[0][x]) *
+                    (croods[1][y + 1] - croods[1][y]) *
+                    (croods[2][z + 1] - croods[2][z]);
+                for (int i = 0; i < 6; i++) {
+                    x1 = x + step[i][0];
+                    y1 = y + step[i][1];
+                    z1 = z + step[i][2];
+                    if (x1 < 0 || x1 >= croods[0].size() - 1) continue;
+                    if (y1 < 0 || y1 >= croods[1].size() - 1) continue;
+                    if (z1 < 0 || z1 >= croods[2].size() - 1) continue;
+                    if (vis[x1][y1][z1]) continue;
+                    if (G[x1][y1][z1]) {
+                        if (i == 0 || i == 1) {
+                            s_air += (croods[1][y1 + 1] - croods[1][y1]) * (croods[2][z1 + 1] - croods[2][z1]);
+                        }
+                        else if (i == 2 || i == 3) {
+                            s_air += (croods[0][x1 + 1] - croods[0][x1]) * (croods[2][z1 + 1] - croods[2][z1]);
+                        }
+                        else {
+                            s_air += (croods[0][x1 + 1] - croods[0][x1]) * (croods[1][y1 + 1] - croods[1][y1]);
+                        }
+                        continue;
+                    }
+                    S.emplace(x1, y1, z1);
+                }
             }
-            if (!has_neibor) S.pop();
         }
-        //cout << "502 * 502 * 502=" << 502 * 502 * 502 << endl;
-        //cout << "v_ari = " << v_air << endl;
-        cout << "v_s = " << 501 * 501 * 501 - v_air << endl;
-        //cout << 10 * 10 * 10 - v_air << endl;
+        cout << s_air << ' ' << 501 * 501 * 501 - v_air << endl;
     }
     return 0;
 }
