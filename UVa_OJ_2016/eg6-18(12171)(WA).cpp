@@ -223,15 +223,19 @@
 #include <vector>
 #include <stack>
 #include <algorithm>
+#include <memory.h>
 using namespace std;
 struct Box {
     int x0, y0, z0;
-    int x, y, z;
+    int x1, y1, z1;
+    Box(int x0, int y0, int z0, int x1, int y1, int z1) :x0(x0), y0(y0), z0(z0), x1(x1), y1(y1), z1(z1) {}
 };
 vector<Box> boxes;
-vector<int> croods[3];
-vector<vector<vector<bool>>> G;
-vector<vector<vector<bool>>> vis;
+vector<int> X, Y, Z;
+int x_num, y_num, z_num;
+const int maxn = 105;
+const int maxnum = 1010;
+bool G[maxn][maxn][maxn], vis[maxn][maxn][maxn];
 const int step[6][3] = {
     -1, 0, 0,
     1, 0, 0,
@@ -247,80 +251,73 @@ struct Point {
 };
 
 int main() {
+#ifdef LOCAL
     freopen("eg6-18(12171).in", "r", stdin);
+#endif
     int t;
     cin >> t;
     while (t--) {
         int n;
         cin >> n;
         boxes.clear();
-        for (auto& crood : croods) {
-            crood.clear();
-            crood.push_back(0);
-            crood.push_back(501);
-        }
+        X.assign({ 0, maxnum });
+        Y.assign({ 0, maxnum });
+        Z.assign({ 0, maxnum });
+        int x0, y0, z0, x, y, z, x1, y1, z1;
         for (int i = 0; i < n; i++) {
-            Box box;
-            cin >> box.x0 >> box.y0 >> box.z0 >> box.x >> box.y >> box.z;
-            croods[0].push_back(box.x0);
-            croods[0].push_back(box.x0 + box.x);
-            croods[1].push_back(box.y0);
-            croods[1].push_back(box.y0 + box.y);
-            croods[2].push_back(box.z0);
-            croods[2].push_back(box.z0 + box.z);
-            boxes.push_back(box);
+            cin >> x0 >> y0 >> z0 >> x >> y >> z;
+            X.push_back(x0);    X.push_back(x0 + x);
+            Y.push_back(y0);    Y.push_back(y0 + y);
+            Z.push_back(z0);    Z.push_back(z0 + z);
+            boxes.emplace_back(x0, y0, z0, x0 + x, y0 + y, z0 + z);
         }
-        for (auto& crood : croods) {
-            sort(crood.begin(), crood.end());
-            crood.erase(unique(crood.begin(), crood.end()), crood.end());
-        }
-        G.assign(croods[0].size(), vector<vector<bool>>(croods[1].size(), vector<bool>(croods[2].size(), false)));
-        vis = G;
+        sort(X.begin(), X.end());
+        x_num = unique(X.begin(), X.end()) - X.begin();
+        sort(Y.begin(), Y.end());
+        y_num = unique(Y.begin(), Y.end()) - Y.begin();
+        sort(Z.begin(), Z.end());
+        z_num = unique(Z.begin(), Z.end()) - Z.begin();
+        memset(G, 0, sizeof(G));
+        memset(vis, 0, sizeof(vis));
+        int ix, iy, iz;
         for (auto& box : boxes) {
-            int ix = 0;
-            while (croods[0][ix] < box.x0) ix++;
-            for (; croods[0][ix] < box.x0 + box.x; ix++) {
-                int iy = 0;
-                while (croods[1][iy] < box.y0) iy++;
-                for (; croods[1][iy] < box.y0 + box.y; iy++) {
-                    int iz = 0;
-                    while (croods[2][iz] < box.z0) iz++;
-                    for (; croods[2][iz] < box.z0 + box.z; iz++) {
+            for (ix = 0; X[ix] < box.x0; ix++);
+            for (; X[ix] < box.x1; ix++) {
+                for (iy = 0; Y[iy] < box.y0; iy++);
+                for (; Y[iy] < box.y1; iy++) {
+                    for (iz = 0; Z[iz] < box.z0; iz++);
+                    for (; Z[iz] < box.z1; iz++) {
                         G[ix][iy][iz] = true;
                     }
                 }
+
             }
         }
         int v_air = 0, s_air = 0;
         stack<Point> S;
         S.emplace(0, 0, 0);
-        int x, y, z, x1, y1, z1;
         while (!S.empty()) {
             Point point = S.top();
             S.pop();
             x = point.x; y = point.y; z = point.z;
             if (!vis[x][y][z]) {
                 vis[x][y][z] = true;
-                v_air += (croods[0][x + 1] - croods[0][x]) *
-                    (croods[1][y + 1] - croods[1][y]) *
-                    (croods[2][z + 1] - croods[2][z]);
+                v_air += (X[x + 1] - X[x]) * (Y[y + 1] - Y[y]) * (Z[z + 1] - Z[z]);
                 for (int i = 0; i < 6; i++) {
                     x1 = x + step[i][0];
                     y1 = y + step[i][1];
                     z1 = z + step[i][2];
-                    if (x1 < 0 || x1 >= croods[0].size() - 1) continue;
-                    if (y1 < 0 || y1 >= croods[1].size() - 1) continue;
-                    if (z1 < 0 || z1 >= croods[2].size() - 1) continue;
+                    if (x1 < 0 || x1 >= x_num - 1 || y1 < 0 || y1 >= y_num - 1 || z1 < 0 || z1 >= z_num - 1) continue;
                     if (vis[x1][y1][z1]) continue;
                     if (G[x1][y1][z1]) {
                         if (i == 0 || i == 1) {
-                            s_air += (croods[1][y1 + 1] - croods[1][y1]) * (croods[2][z1 + 1] - croods[2][z1]);
+                            s_air += (Y[y1 + 1] - Y[y1]) * (Z[z1 + 1] - Z[z1]);
                         }
                         else if (i == 2 || i == 3) {
-                            s_air += (croods[0][x1 + 1] - croods[0][x1]) * (croods[2][z1 + 1] - croods[2][z1]);
+                            s_air += (X[x1 + 1] - X[x1]) * (Z[z1 + 1] - Z[z1]);
                         }
                         else {
-                            s_air += (croods[0][x1 + 1] - croods[0][x1]) * (croods[1][y1 + 1] - croods[1][y1]);
+                            s_air += (X[x1 + 1] - X[x1]) * (Y[y1 + 1] - Y[y1]);
                         }
                         continue;
                     }
@@ -328,7 +325,7 @@ int main() {
                 }
             }
         }
-        cout << s_air << ' ' << 501 * 501 * 501 - v_air << endl;
+        cout << s_air << ' ' << maxnum * maxnum * maxnum - v_air << endl;
     }
     return 0;
 }
