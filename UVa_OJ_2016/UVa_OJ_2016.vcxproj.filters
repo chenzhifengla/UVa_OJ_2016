@@ -174,24 +174,6 @@
     <ClCompile Include="ex6-14(12118)(UR).cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="eg7-1(725).cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="eg7-2%2811059%29%28WA%29.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="eg7-3%2810976%29%28WA%29.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="eg7-4%28WA%29.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="eg7-5%28129%29%28PE%29.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="eg7-6%28140%29%28UR%29.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="eg7-7(1354)(UR).cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -369,6 +351,24 @@
     <ClCompile Include="eg6-22%2811853%29%28accept%29.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="eg7-1%28725%29%28accept%29.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="eg7-2%2811059%29%28accept%29.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="eg7-3%2810976%29%28accept%29.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="eg7-4%28accept%29.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="eg7-5%28129%29%28accept%29.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="eg7-6%28140%29%28accept%29.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="eg7-7.5.cpp">
@@ -465,6 +465,15 @@
       <Filter>资源文件</Filter>
     </None>
     <None Include="eg6-22(11853).in">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="eg7-2(11059).in">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="eg7-2(11059).out">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="eg7-6(140).in">
       <Filter>资源文件</Filter>
     </None>
   </ItemGroup>
