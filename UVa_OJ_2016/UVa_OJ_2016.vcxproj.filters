@@ -174,9 +174,6 @@
     <ClCompile Include="ex6-14(12118)(UR).cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="eg7-8(10603).cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="eg7-9%281601%29%28UR%29.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -369,14 +366,14 @@
     <ClCompile Include="eg7-7%281354%29%28WA%29.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="eg7-7-5(八数码问题).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="eg7-8%2810603%29%28accept%29.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="eg7-7.5.cpp">
-      <Filter>源文件</Filter>
-    </None>
-    <None Include="eg7-9.5.cpp">
-      <Filter>源文件</Filter>
-    </None>
     <None Include="README.md">
       <Filter>源文件</Filter>
     </None>
@@ -478,6 +475,15 @@
     </None>
     <None Include="eg7-7(1354).in">
       <Filter>资源文件</Filter>
+    </None>
+    <None Include="eg7-7-5.in">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="eg7-8(10603).in">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="eg7-9-5%28埃及分数问题%29.cpp">
+      <Filter>源文件</Filter>
     </None>
   </ItemGroup>
 </Project>
