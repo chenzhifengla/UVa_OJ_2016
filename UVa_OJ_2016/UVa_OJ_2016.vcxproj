@@ -351,7 +351,10 @@
     <ClCompile Include="eg8-2%281605%29%28accept%29.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="eg8-3%281152%29%28TLE%29.cpp" />
+    <ClCompile Include="eg8-3%281152%29%28TLE%29.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="eg8-4%2811134%29%28WA%29.cpp" />
     <ClCompile Include="eg8-7(11572).cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -657,6 +660,7 @@
     </None>
     <None Include="eg8-1(120).in" />
     <None Include="eg8-3(1152).in" />
+    <None Include="eg8-4(11134).in" />
     <None Include="README.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

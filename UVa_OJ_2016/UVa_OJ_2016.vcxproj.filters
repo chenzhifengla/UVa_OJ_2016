@@ -381,6 +381,9 @@
     <ClCompile Include="eg8-3%281152%29%28TLE%29.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="eg8-4%2811134%29%28WA%29.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md">
@@ -498,6 +501,9 @@
       <Filter>资源文件</Filter>
     </None>
     <None Include="eg8-3(1152).in">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="eg8-4(11134).in">
       <Filter>资源文件</Filter>
     </None>
   </ItemGroup>
