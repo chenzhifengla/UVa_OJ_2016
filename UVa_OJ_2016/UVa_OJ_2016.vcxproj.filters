@@ -195,9 +195,6 @@
     <ClCompile Include="eg7-15(1603)(UR).cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="eg8-7(11572).cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="eg3-0-1(开灯问题).cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -378,10 +375,25 @@
     <ClCompile Include="eg8-2%281605%29%28accept%29.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="eg8-3%281152%29%28TLE%29.cpp">
+    <ClCompile Include="eg8-4%2811134%29%28WA%29.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="eg8-4%2811134%29%28WA%29.cpp">
+    <ClCompile Include="eg8-3%281152%29%28accept%29.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="eg8-5%2811054%29%28accept%29.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="eg8-6%281606%29%28UR%29.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="eg8-8%281471%29%28TLE%29.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="eg8-9%281451%29%28UR%29.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="eg8-7%2811572%29%28accept%29.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -504,6 +516,9 @@
       <Filter>资源文件</Filter>
     </None>
     <None Include="eg8-4(11134).in">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="eg8-8(1471).in">
       <Filter>资源文件</Filter>
     </None>
   </ItemGroup>

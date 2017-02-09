@@ -351,13 +351,23 @@
     <ClCompile Include="eg8-2%281605%29%28accept%29.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="eg8-3%281152%29%28TLE%29.cpp">
+    <ClCompile Include="eg8-3%281152%29%28accept%29.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="eg8-4%2811134%29%28WA%29.cpp" />
-    <ClCompile Include="eg8-7(11572).cpp">
+    <ClCompile Include="eg8-4%2811134%29%28WA%29.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="eg8-5%2811054%29%28accept%29.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="eg8-6%281606%29%28UR%29.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="eg8-7%2811572%29%28accept%29.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="eg8-8%281471%29%28TLE%29.cpp" />
+    <ClCompile Include="eg8-9%281451%29%28UR%29.cpp" />
     <ClCompile Include="ex6-10%28246%29%28WA%29.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
@@ -661,6 +671,7 @@
     <None Include="eg8-1(120).in" />
     <None Include="eg8-3(1152).in" />
     <None Include="eg8-4(11134).in" />
+    <None Include="eg8-8(1471).in" />
     <None Include="README.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
